@@ -1,0 +1,298 @@
+/* base components */
+@font-face {
+  font-family: 'aloveofthunder';
+  src: local('aloveofthunder'), url('./assets/ALoveofThunder.ttf') format('truetype');
+}
+
+body{
+  margin:0;
+  padding:0;
+  text-align: center;
+  color:white;
+  font-size:1.2em;
+  background-color: #000;
+}
+
+div {
+  padding:6px;
+}
+
+ol {
+  list-style:circle;
+  margin:10px;
+}
+
+ol li {
+  margin:4px 0 0 30px;
+  padding:6px 0 0 0;
+}
+
+/* styles */
+h1 {
+  font-family: aloveofthunder;
+  margin:0 0 0 0;
+  font-size: 5.5em;
+  color:white;
+  text-shadow: 2px 4px 8px black;
+  position: relative;
+  top:-60px;
+}
+
+h3 {
+  font-size:0.9em;
+  font-family:aloveofthunder;
+  padding:10px 0 4px;
+}
+
+header {
+  background-image: url('./assets/wrestling-action-shots.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 400px;
+  width:100%;
+
+}
+
+dt{
+  font-family:aloveofthunder;
+  font-size:0.7em;
+}
+
+dd {
+  margin: 2px 0 0 10px;
+}
+
+.main-container {
+  width:100%;
+  margin:0;
+  padding:0;
+  display: flex;
+  justify-content: center;
+
+}
+
+.center-container {
+  margin:0;
+  padding:0;
+  max-width:1440px;
+  width:100%; 
+  background-color: black;
+}
+
+.site-content {
+  width:100%;
+  padding:20px;
+  text-align: left;
+  
+}
+
+.content-banner {
+  background-color: #189960;
+  font-family:aloveofthunder;
+  text-align:center;
+  padding:10px;
+  font-size:0.9em;
+}
+
+.content-banner a {
+  color:#000;
+}
+
+.header-content {
+  width:100%;
+  margin:0;
+  padding:0;
+  display: flex;
+
+}
+
+.main-content {
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.general-information {
+  margin:10px;
+  padding:10px;
+  width:400px;
+  list-style: none;
+  text-align: left;
+}
+
+.initial-image {
+  width:200px;
+  padding:10px;
+}
+
+.general-information li {
+  padding:10px;
+}
+
+.general-information li p {
+  padding: 0;
+  margin:0
+}
+
+.logo {
+  width: 300px;
+  height:300px;
+  position:relative;
+  top:-100px;
+}
+
+.link {
+  cursor:pointer;
+}
+
+.qr-code {
+  width:200px;
+}
+
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.site-links {
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin:0;
+  list-style:none;
+  background-color: rgba(0,0,0,0.7);
+  padding:0 0 0 10px ;
+
+}
+
+.site-links li {
+  padding:20px 10px 10px;
+}
+
+.site-links a {
+  font-weight:bold;
+  font-family: 'Courier New', Courier, monospace;
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.social-links {
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin:0;
+  padding:0;
+  list-style:none;
+  background-color: rgba(0,0,0,0.7);
+
+}
+
+
+.social-links li {
+  padding:10px 20px;
+  font-size:1.5em;
+}
+
+.social-links li img {
+  height:40px;
+}
+
+.content-section {
+  display: flex;
+
+}
+
+.calender{
+  text-align:center;
+}
+
+.filler-content {
+  padding:10px;
+  text-align: center;
+  width:100%;
+
+}
+
+.filler-content a {
+  color:white;
+}
+
+.modal {
+  position: fixed; /* Stay in place */
+  top:-100px;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: -30px auto; /* 15% from the top and centered */
+  padding: 4px;
+  border: 1px solid #888;
+  width: 600px; /* Could be more or less, depending on screen size */
+}
+
+.google-cal{
+  border:solid 1px #777; 
+  width:100%; 
+  height:600px;
+}
+
+@media (max-width:1000px){
+  .site-content {
+    padding:0;
+  }
+  .main-content{
+    display:block;
+  }
+  .general-information {
+    padding:10px 0 4px 10px;
+    margin:0;
+    width:100%;
+  }
+  h1 {
+    font-size: 2em;
+  }
+
+  .google-cal {
+    height:400px;
+    margin:0;
+    padding:0;
+    border:none;
+  }
+
+  .logo {
+    top:-20px;
+  }
+
+  .content-banner {
+    font-size:1em;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 2px auto; /* 15% from the top and centered */
+    padding: 4px;
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+  }
+  .qr-code-container {
+    width:100%;
+    padding:0;
+    margin:0;
+    text-align:center;
+  }
+
+}
