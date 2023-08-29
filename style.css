@@ -38,6 +38,12 @@ h1 {
   top:-60px;
 }
 
+h2 {
+  font-size:1.2rem;
+  font-family:aloveofthunder;
+  padding:10px 0 6px;
+}
+
 h3 {
   font-size:0.9em;
   font-family:aloveofthunder;
@@ -121,7 +127,7 @@ dd {
 }
 
 .initial-image {
-  width:200px;
+  width:400px;
   padding:10px;
 }
 
